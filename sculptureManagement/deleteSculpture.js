@@ -1,6 +1,6 @@
 class deleteSculpture{
     constructor(sculptureDataBase) {
-        this.sculptureDataBase = sculptureDataBase;  // Pasamos la instancia de la base de datos correctamente
+        this.sculptureDataBase = sculptureDataBase;  
       }
     
     deleteSculpture(id){

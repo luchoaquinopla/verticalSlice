@@ -1,6 +1,6 @@
 class CreateSculpture {
   constructor(sculptureDataBase) {
-    this.sculptureDataBase = sculptureDataBase;  // Pasamos la instancia de la base de datos correctamente
+    this.sculptureDataBase = sculptureDataBase;  
   }
 
   newSculpture(sculptureData) {
@@ -9,19 +9,19 @@ class CreateSculpture {
     }
 
     const sculpture = {
-      id: this.sculptureDataBase.sculptures.length + 1,  // Accedemos a this.sculptureDataBase.sculptures
+      id: this.sculptureDataBase.sculptures.length + 1,  
       name: sculptureData.name,
       theme: sculptureData.theme,
       creationDate: sculptureData.creationDate
     };
 
-    this.sculptureDataBase.sculptures.push(sculpture);  // Añadimos la nueva escultura a la base de datos
+    this.sculptureDataBase.sculptures.push(sculpture);  
     return sculpture;
   }
 
   getAllSculptures() {
-    return this.sculptureDataBase.getDataBase();  // Aseguramos que estamos accediendo a la base de datos correctamente
-  }
+    return this.sculptureDataBase.getDataBase(); 
+}
 }
 
 module.exports = CreateSculpture;
